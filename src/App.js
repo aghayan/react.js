@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {Home} from './pages/home.js';
+import {Custom} from './button/button.js'
+// import {Input} from './input/input.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  return(
+    <div>
+      <h1 style={{textAlign:'center', color:'purple'}}>App</h1>
+      <Home/>
+      <Custom/>
+      {/* <Input/> */}
     </div>
-  );
-}
+  )
+};
 
 export default App;
